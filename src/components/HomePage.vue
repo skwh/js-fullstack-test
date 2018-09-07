@@ -16,7 +16,7 @@ export default {
     return {
       pages: [
         ['Portfolio', '/portfolio'],
-        ['Resume', '/resume'],
+        ['Resume', '../../static/Resume_5.pdf'],
         ['Contact Me', '/contact-me']
       ]
     }
