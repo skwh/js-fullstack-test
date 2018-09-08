@@ -1,6 +1,7 @@
 <template>
   <h3 class="project-list-item">
-      <router-link v-bind:to="'/portfolio/' + this.projectId">
+      <router-link v-bind:to="'/portfolio/' + this.projectId"
+                   class="in">
         <slot></slot>
       </router-link>
   </h3>

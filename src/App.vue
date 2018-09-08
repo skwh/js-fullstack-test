@@ -28,14 +28,10 @@ export default {
 
 .slide-left-enter, .slide-right-leave-active {
   opacity: 0;
-  /* -webkit-transform: translate(200vh, 0);
-  transform: translate(200vh, 0); */
   transform: scale(0.95);
 }
 .slide-left-leave-active, .slide-right-enter {
   opacity: 0;
-  /* -webkit-transform: translate(-200vh, 0);
-  transform: translate(-200vh, 0); */
   transform: scale(1.05);
 }
 
@@ -115,10 +111,26 @@ h3>a:hover {
 h3>a {
   transition: color 0.3s;
 }
-h3>a::after {
-  content: "  >>";
+
+h3>a::after, h4>a::before {
   font-size: 0.75em;
-  transition: margin-left 0.2s;
+  transition: margin 0.2s;
+}
+
+h3>a.in::after {
+  content: "  >>";
+}
+
+h4>a.out::before {
+  content: "<< ";
+}
+
+h4>a.out:hover::before {
+  margin-right: 5px;
+}
+
+h3>a.in:hover::after {
+  margin-left: 5px;
 }
 
 code {

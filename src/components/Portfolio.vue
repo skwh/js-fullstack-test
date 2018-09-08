@@ -2,7 +2,8 @@
   <main>
     <h1>Portfolio</h1>
     <project-list-item v-for="project in projectNames" :key="project[1]" :projectId="project[1]">{{ project[0] }}</project-list-item>
-    <h4><router-link v-bind:to="'/'"><< Back</router-link></h4>
+    <h4><router-link class="out"
+      v-bind:to="'/'">Back</router-link></h4>
   </main>
 </template>
 

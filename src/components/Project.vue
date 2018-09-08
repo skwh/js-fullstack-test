@@ -6,7 +6,8 @@
     <litebox :images="this.images"
              :prefix="this.prefix"></litebox>
     <p v-for="paragraph in body">{{ paragraph }}</p>
-    <h4><router-link v-bind:to="'/portfolio'"><< Back</router-link></h4>
+    <h4><router-link class="out"
+      v-bind:to="'/portfolio'">Back</router-link></h4>
   </main>
 </template>
 
